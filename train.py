@@ -329,7 +329,7 @@ def ultralytics_eval(weights: Path, data_yaml: Path, names):
     return {"mAP50": float(m.box.map50), "mAP50_95": float(m.box.map),
             "per_class": per_class, "confusion_matrix": cm,
             "confusion_labels": list(names) + ["background"],
-            "confusion_note": "Ultralytics: rows predicted, cols true, conf 0.25, IoU 0.45"}
+            "confusion_note": "Ultralytics val: rows predicted, cols true, conf 0.001 (val default), IoU 0.45"}
 
 
 # --------------------------------------------------------------- main ---

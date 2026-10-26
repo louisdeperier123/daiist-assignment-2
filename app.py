@@ -53,8 +53,7 @@ T_STAR = float(OP.get("model_alone_threshold", 0.5))
 BAND = OP.get("review_band_capacity_limited", {})
 T_LOW0 = float(BAND.get("t_low", max(T_STAR - 0.1, 0.01)))
 T_HIGH0 = float(BAND.get("t_high", T_STAR))
-if T_LOW0 >= T_HIGH0:  # give the sliders a visible band to start from
-    T_LOW0 = max(round(T_HIGH0 - 0.10, 2), 0.01)
+T_LOW0 = min(T_LOW0, T_HIGH0)  # start at the chosen operating point
 
 MODEL = None
 if WEIGHTS:
@@ -189,7 +188,7 @@ def confusion_fig():
     cm = np.array(off["confusion_matrix"]); labels = off["confusion_labels"]
     fig = go.Figure(go.Heatmap(z=cm, x=labels, y=labels, text=cm.astype(int),
                                texttemplate="%{text}", colorscale="Blues", showscale=False))
-    fig.update_layout(title="Detection confusion matrix (test, conf 0.25)",
+    fig.update_layout(title="Detection confusion matrix (test, Ultralytics val: conf 0.001, IoU 0.45)",
                       xaxis_title="True", yaxis_title="Predicted",
                       yaxis_autorange="reversed", height=360, margin=dict(t=50))
     return fig
