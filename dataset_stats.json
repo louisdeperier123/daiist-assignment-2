@@ -1,0 +1,74 @@
+{
+  "train": {
+    "images": 823,
+    "classes": {
+      "crop": {
+        "instances": 279,
+        "images_containing": 70,
+        "instances_in_tray_images": 276,
+        "rel_area_median": 0.002291666666666672,
+        "rel_area_p10": 0.0006751999999999945,
+        "rel_area_p90": 0.014237599999999993,
+        "median_side_px_at_640": 30.637667448202855
+      },
+      "weed": {
+        "instances": 5188,
+        "images_containing": 795,
+        "instances_in_tray_images": 1079,
+        "rel_area_median": 0.0010329861111111139,
+        "rel_area_p10": 0.0004372829861111141,
+        "rel_area_p90": 0.003155924479166667,
+        "median_side_px_at_640": 20.569664827388713
+      }
+    },
+    "tray_images": 184
+  },
+  "val": {
+    "images": 235,
+    "classes": {
+      "crop": {
+        "instances": 47,
+        "images_containing": 17,
+        "instances_in_tray_images": 43,
+        "rel_area_median": 0.003671875,
+        "rel_area_p10": 0.0014850666666666606,
+        "rel_area_p90": 0.017633558333333306,
+        "median_side_px_at_640": 38.78143885933063
+      },
+      "weed": {
+        "instances": 1558,
+        "images_containing": 228,
+        "instances_in_tray_images": 190,
+        "rel_area_median": 0.0010439184027777764,
+        "rel_area_p10": 0.0004507378472222222,
+        "rel_area_p90": 0.0029346788194444433,
+        "median_side_px_at_640": 20.678224725004256
+      }
+    },
+    "tray_images": 30
+  },
+  "test": {
+    "images": 118,
+    "classes": {
+      "crop": {
+        "instances": 85,
+        "images_containing": 16,
+        "instances_in_tray_images": 85,
+        "rel_area_median": 0.0025781249999999984,
+        "rel_area_p10": 0.0008911999999999977,
+        "rel_area_p90": 0.01815277777777779,
+        "median_side_px_at_640": 32.49615361854383
+      },
+      "weed": {
+        "instances": 696,
+        "images_containing": 109,
+        "instances_in_tray_images": 132,
+        "rel_area_median": 0.0010004340277777791,
+        "rel_area_p10": 0.0003968159722222207,
+        "rel_area_p90": 0.0026486545138888888,
+        "median_side_px_at_640": 20.24296860091865
+      }
+    },
+    "tray_images": 27
+  }
+}

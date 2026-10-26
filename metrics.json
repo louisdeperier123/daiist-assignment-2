@@ -1,0 +1,87 @@
+{
+  "official_test": {
+    "mAP50": 0.7524243830302035,
+    "mAP50_95": 0.4480775331548827,
+    "per_class": {
+      "crop": {
+        "precision": 0.7070002688129844,
+        "recall": 0.7529411764705882,
+        "AP50": 0.7597633774773438,
+        "mAP50_95": 0.4581729625118352
+      },
+      "weed": {
+        "precision": 0.7029955784062362,
+        "recall": 0.757183908045977,
+        "AP50": 0.7450853885830632,
+        "mAP50_95": 0.4379821037979304
+      }
+    },
+    "confusion_matrix": [
+      [
+        81.0,
+        0.0,
+        1522.0
+      ],
+      [
+        0.0,
+        688.0,
+        10755.0
+      ],
+      [
+        4.0,
+        8.0,
+        0.0
+      ]
+    ],
+    "confusion_labels": [
+      "crop",
+      "weed",
+      "background"
+    ],
+    "confusion_note": "Ultralytics: rows predicted, cols true, conf 0.25, IoU 0.45"
+  },
+  "baselines": {
+    "Finetuned yolo11n": {
+      "AP50_weed": 0.7439890265122241,
+      "AP50_crop": 0.7615146335378058,
+      "best_threshold": 0.26,
+      "TP_weed_sprayed": 611,
+      "FN_weed_missed": 85,
+      "FP_crop_sprayed": 0,
+      "TN_crop_left": 85,
+      "soil_sprays": 379,
+      "weed_recall": 0.8778735632183908,
+      "spray_precision": 0.6171717171717171,
+      "crop_sprayed_rate": 0.0,
+      "cost_per_1000": 1.3249304605059824
+    },
+    "COCO yolo11n zero-shot": {
+      "AP50_weed": 0.0036757936187731587,
+      "AP50_crop": 0.0,
+      "best_threshold": 0.68,
+      "TP_weed_sprayed": 0,
+      "FN_weed_missed": 696,
+      "FP_crop_sprayed": 0,
+      "TN_crop_left": 85,
+      "soil_sprays": 0,
+      "weed_recall": 0.0,
+      "spray_precision": 0.0,
+      "crop_sprayed_rate": 0.0,
+      "cost_per_1000": 4.0
+    },
+    "Trivial: predict nothing": {
+      "AP50_weed": 0.0,
+      "AP50_crop": 0.0,
+      "best_threshold": 0.01,
+      "TP_weed_sprayed": 0,
+      "FN_weed_missed": 696,
+      "FP_crop_sprayed": 0,
+      "TN_crop_left": 85,
+      "soil_sprays": 0,
+      "weed_recall": 0.0,
+      "spray_precision": 0.0,
+      "crop_sprayed_rate": 0.0,
+      "cost_per_1000": 4.0
+    }
+  }
+}

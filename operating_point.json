@@ -1,0 +1,201 @@
+{
+  "positive_class": "weed",
+  "match_iou": 0.3,
+  "model_alone_threshold": 0.26,
+  "review_band_unconstrained": {
+    "cost_per_1000": 1.3249304605059824,
+    "t_low": 0.26,
+    "t_high": 0.26,
+    "review_share": 0.0
+  },
+  "review_band_capacity_limited": {
+    "cost_per_1000": 1.3249304605059824,
+    "t_low": 0.26,
+    "t_high": 0.26,
+    "review_share": 0.0
+  },
+  "review_capacity_share": 0.004319999999999999,
+  "plants_per_day": 2666666.666666667,
+  "reviews_per_day": 0.0,
+  "reviewer_hours_per_day": 0.0,
+  "confusion_per_1000_model_alone": [
+    [
+      351.14942528735634,
+      0.0,
+      48.85057471264367
+    ],
+    [
+      0.0,
+      0.0,
+      600.0
+    ],
+    [
+      485.2752880921895,
+      0.0,
+      0.0
+    ]
+  ],
+  "confusion_per_1000_with_review": [
+    [
+      351.14942528735634,
+      0.0,
+      48.85057471264367
+    ],
+    [
+      0.0,
+      0.0,
+      600.0
+    ],
+    [
+      485.2752880921895,
+      0.0,
+      0.0
+    ]
+  ],
+  "bootstrap": {
+    "cost_per_1000_ci95": [
+      1.202699678614762,
+      1.4857222121200717
+    ],
+    "crop_sprayed_rate_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "subsets": {
+    "tray (IMG_)": {
+      "weeds": 132,
+      "crops": 85,
+      "weed_recall": 0.9318181818181818,
+      "crop_sprayed_rate": 0.0
+    },
+    "open field": {
+      "weeds": 564,
+      "crops": 0,
+      "weed_recall": 0.8652482269503546,
+      "crop_sprayed_rate": null
+    }
+  },
+  "sensitivity": [
+    {
+      "fn_weed_missed": 0.002,
+      "base_rate_weed": 0.2,
+      "best_threshold": 0.7,
+      "cost_per_1000": 0.3901283353201761
+    },
+    {
+      "fn_weed_missed": 0.002,
+      "base_rate_weed": 0.4,
+      "best_threshold": 0.53,
+      "cost_per_1000": 0.6995378751085404
+    },
+    {
+      "fn_weed_missed": 0.002,
+      "base_rate_weed": 0.6,
+      "best_threshold": 0.49,
+      "cost_per_1000": 0.982959512561261
+    },
+    {
+      "fn_weed_missed": 0.005,
+      "base_rate_weed": 0.2,
+      "best_threshold": 0.41,
+      "cost_per_1000": 0.65693996791617
+    },
+    {
+      "fn_weed_missed": 0.005,
+      "base_rate_weed": 0.4,
+      "best_threshold": 0.33,
+      "cost_per_1000": 1.0231150749849147
+    },
+    {
+      "fn_weed_missed": 0.005,
+      "base_rate_weed": 0.6,
+      "best_threshold": 0.32,
+      "cost_per_1000": 1.3589076780431808
+    },
+    {
+      "fn_weed_missed": 0.01,
+      "base_rate_weed": 0.2,
+      "best_threshold": 0.33,
+      "cost_per_1000": 0.8573104772837653
+    },
+    {
+      "fn_weed_missed": 0.01,
+      "base_rate_weed": 0.4,
+      "best_threshold": 0.26,
+      "cost_per_1000": 1.3249304605059824
+    },
+    {
+      "fn_weed_missed": 0.01,
+      "base_rate_weed": 0.6,
+      "best_threshold": 0.19,
+      "cost_per_1000": 1.7251567398119125
+    },
+    {
+      "fn_weed_missed": 0.02,
+      "base_rate_weed": 0.2,
+      "best_threshold": 0.26,
+      "cost_per_1000": 1.1493557478623044
+    },
+    {
+      "fn_weed_missed": 0.02,
+      "base_rate_weed": 0.4,
+      "best_threshold": 0.14,
+      "cost_per_1000": 1.686441638335762
+    },
+    {
+      "fn_weed_missed": 0.02,
+      "base_rate_weed": 0.6,
+      "best_threshold": 0.1,
+      "cost_per_1000": 2.073719590268886
+    },
+    {
+      "fn_weed_missed": 0.04,
+      "base_rate_weed": 0.2,
+      "best_threshold": 0.12,
+      "cost_per_1000": 1.4987714689390264
+    },
+    {
+      "fn_weed_missed": 0.04,
+      "base_rate_weed": 0.4,
+      "best_threshold": 0.09,
+      "cost_per_1000": 2.0326946002030994
+    },
+    {
+      "fn_weed_missed": 0.04,
+      "base_rate_weed": 0.6,
+      "best_threshold": 0.09,
+      "cost_per_1000": 2.5240739105479264
+    }
+  ],
+  "policy_cost_per_1000": {
+    "Do nothing (never spray)": 4.0,
+    "Spray every plant": 12.4,
+    "Person checks every plant": 14.28888888888889,
+    "Model alone": 1.3249304605059824,
+    "Model + review band": 1.3249304605059824
+  },
+  "costs": {
+    "fp_crop_sprayed": 0.02,
+    "fn_weed_missed": 0.01,
+    "tp_weed_sprayed": 0.001,
+    "tn_crop_left": 0.0,
+    "soil_sprayed": 0.001,
+    "review_seconds": 2.5,
+    "reviewer_eur_per_hour": 20.0,
+    "base_rate_weed": 0.4,
+    "hectares_per_day": 20.0,
+    "crop_plants_per_ha": 80000.0,
+    "reviewers_available": 1,
+    "review_hours_per_day": 8.0,
+    "review_cost": 0.01388888888888889
+  },
+  "training": {
+    "model": "yolo11n.pt",
+    "epochs": 100,
+    "imgsz": 640,
+    "batch": 16,
+    "seed": 0,
+    "patience": 25
+  }
+}
