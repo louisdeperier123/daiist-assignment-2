@@ -1,9 +1,9 @@
 # Assignment 2 Report
 
-- **Name**:
-- **Student ID**:
-- **Email**:
-- **Group**: [BBADBA 5A | BBADBA 5B | PPLEDBA 5A | BDBA 3A]
+- **Name**: Louis de Perier
+- **Student ID**: 20159
+- **Email**: ldeperier.ieu2022@student.ie.edu
+- **Group**: BBADBA 5B
 
 ## Business problem, and the cost of being wrong
 
@@ -263,4 +263,4 @@ checking alone costs more than all the weeds it would catch.
 
 ## Generative AI use disclosure
 
-*Describe what you used and how.*
+I used claude to build the code and download the dataset
